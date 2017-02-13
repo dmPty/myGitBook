@@ -20,7 +20,7 @@ composer require element-vip/scheduling:dev-master
 ElementVip\Scheduling\Providers\SchedulingProvider::class,
 ```
 
-<u>注意：请将`SchedulingProvider`在所有使用此包提供的方法定义任务调度的服务提供者之前注册！</u>
+> 注意：请将`SchedulingProvider`在所有使用此包提供的方法定义任务调度的服务提供者之前注册！
 
 **定义任务调度：**
 
