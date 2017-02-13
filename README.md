@@ -1,8 +1,8 @@
 # Scheduling 简介
 
-在Laravel中，开发者要使用任务调度必须要将任务写进`app/Console/Kernel.php`文件，而无法包含在 package 中。
+在 Laravel 中，开发者要使用任务调度必须要将任务写进`app/Console/Kernel.php`文件，而无法包含在 package 中。
 
-Scheduling 允许你在你的 package 中添加Laravel任务调度。
+Scheduling 允许你在你的 package 中添加 Laravel 任务调度。
 
 ## 安装与使用
 
@@ -14,7 +14,7 @@ composer require element-vip/scheduling:dev-master
 
 **注册服务提供者：**
 
-在config/app.php文件中providers数组里加入：
+在`config/app.php`文件中 providers 数组里加入：
 
 ```
 ElementVip\Scheduling\Providers\SchedulingProvider::class,
@@ -33,7 +33,7 @@ class Schedule extends Scheduling
     public function schedule()
     {
         $this->schedule->call(function () {
-            //Your job
+            // Your job
         })->daily();
     }
 
