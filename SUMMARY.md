@@ -1,6 +1,6 @@
 # Summary
 
-* [readme](README.md)
-* [Scheduling](chapter1.md)
-* [Markdown学习笔记](markdown.md)
+* [MarkdownNote](MarkdownNote.md)
+* [SchedulingReadMe](SchedulingReadMe.md)
+* [SchedulingIntro](SchedulingIntro.md)
 
