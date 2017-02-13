@@ -27,16 +27,26 @@ ElementVip\Scheduling\Providers\SchedulingProvider::class,
 在你的项目中建立任务调度文件并继承`src\Schedule\Scheduling.php`文件，并重写`schedule()`方法，具体使用方法请参考[Laravel任务调度](https://laravel-china.org/docs/5.3/scheduling)。
 
 ```php
-class Schedule extends Scheduling
+class YourClassName extends Scheduling
 {
 
     public function schedule()
     {
         $this->schedule->call(function () {
-            // Your job
+            // Job
         })->daily();
     }
 
 }
 ```
+
+在你项目的``中注册这个类：
+```php
+public function register()
+{
+$this->app->make('ElementVip\ScheduleList')->add(YourClassName::class);
+}
+```
+
+**大功告成！**
 
