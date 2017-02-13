@@ -20,6 +20,8 @@ composer require element-vip/scheduling:dev-master
 ElementVip\Scheduling\Providers\SchedulingProvider::class,
 ```
 
+<u>注意：请将`SchedulingProvider`在所有使用此包提供的方法定义任务调度的服务提供者之前注册！</u>
+
 **定义任务调度：**
 
 在你的项目中建立任务调度文件并继承`src\Schedule\Scheduling.php`文件，并重写`schedule()`方法，具体使用方法请参考[Laravel任务调度](https://laravel-china.org/docs/5.3/scheduling)。
